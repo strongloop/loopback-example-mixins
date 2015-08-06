@@ -1,0 +1,30 @@
+{
+  "name": "Dog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "breed": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "number"
+    },
+    "age": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": [],
+  "mixins": {
+    "TimeStamp": true,
+    "Tag": true,
+    "Squirrel": true
+  }
+}
