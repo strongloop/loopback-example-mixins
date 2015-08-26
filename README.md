@@ -7,18 +7,18 @@ $ npm install
 $ npm start
 ```
 
-This example is a loopback project that uses the mixin functionality available in [loopback-boot](https://github.com/strongloop/loopback-boot/) as of [v2.8.0](https://github.com/strongloop/loopback-boot/tree/v2.8.0).
+This example is a LoopBack project that uses the mixin functionality available in [loopback-boot](https://github.com/strongloop/loopback-boot/) as of [v2.8.0](https://github.com/strongloop/loopback-boot/tree/v2.8.0).
 
 This example application shows mixins loading from several different locations like directories and modules as well as performing different actions like observing changes and adding model attributes.  This README covers the mixin changes in both the model config and model definition.
 
 ## Mixin Loading
 
-Mixins locations must be specified as a relative path to the location of the `model-config.json` file.  Multiple mixins can exist in a single directory.  Once specified in the `model-config.json` file the mixin will be available in the loopback mixin registry but still needs to be configured for use in the model.
+Specify mixin locations relative to the `server/model-config.json` file.  Multiple mixins can exist in a single directory.  Once specified in the `model-config.json` file the mixin will be available in the LoopBack mixin registry but still needs to be configured for use in the model.
 
 ### npm module
 
-This loads the (loopback-ds-timestamp-mixin)[https://www.npmjs.com/package/loopback-ds-timestamp-mixin] module from the top level `node_modules` directory.  Note that this module provides a mixin file `time-stamp.js` which is registered as the camel case `TimeStamp` name.
-  ```js
+This loads the [loopback-ds-timestamp-mixin](https://www.npmjs.com/package/loopback-ds-timestamp-mixin) module from the top level `node_modules` directory.  Note that this module provides a mixin file `time-stamp.js` which is registered as the camel case `TimeStamp` name.
+```js
     {
       "_meta": {
         ...
@@ -28,11 +28,11 @@ This loads the (loopback-ds-timestamp-mixin)[https://www.npmjs.com/package/loopb
         ]
       }
     }
-  ```
+```
 
 ### The `common/mixins/` directory
 
-    ```js
+```js
     {
       "_meta": {
         ...
@@ -42,12 +42,12 @@ This loads the (loopback-ds-timestamp-mixin)[https://www.npmjs.com/package/loopb
         ]
       }
     }
-    ```
+```
 ### The local `server/mixins/` directory
 
 Because the `model-config.json` is within the `server` directory this loads the mixins from current mixins directory.
 
-    ```js
+```js
     {
       "_meta": {
         ...
@@ -57,7 +57,7 @@ Because the `model-config.json` is within the `server` directory this loads the 
         ]
       }
     }
-    ```
+```
 
 ## Model config
 
