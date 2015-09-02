@@ -18,6 +18,9 @@ describe('mixin example', function() {
     var Dog = app.models.Dog;
     Dog.create({breed: 'Pitbull'}, function(err, dog) {
       assert.ok(dog.squirrel);
+      assert.ok(dog.tag);
+      assert.ok(dog.createdAt);
+      assert.ok(dog.updatedAt); 
       done();
     });
   });
