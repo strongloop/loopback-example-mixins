@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "scripts": {
     "start": "slc run",
-    "test": "mocha"
+    "test": "mocha -R spec test",
+    "pretest": "jshint ."
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -21,7 +22,8 @@
     "loopback-explorer": "^1.1.0"
   },
   "devDependencies": {
-    "mocha": "latest"
+    "mocha": "latest",
+    "jshint": "^2.5.6"
   },
   "license": "MIT",
   "author": "Bryan Clark <clarkbw@gmail.com>",
