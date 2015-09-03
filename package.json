@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "slc run",
-    "test": "mocha -R spec server/test",
+    "test": "mocha -R spec test",
     "pretest": "jshint ."
   },
   "dependencies": {
