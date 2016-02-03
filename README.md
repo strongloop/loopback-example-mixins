@@ -92,3 +92,7 @@ Mixins also have the ability to pass in options through this activation by using
   }
 }
 ```
+
+---
+
+[More LoopBack examples](https://github.com/strongloop/loopback-example)
