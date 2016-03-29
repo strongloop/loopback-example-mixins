@@ -1,8 +1,8 @@
 # loopback-mixins-example
 
 ```
-$ git clone https://github.com/strongloop/loopback-mixins-example
-$ cd loopback-mixins-example
+$ git clone https://github.com/strongloop/loopback-example-mixins
+$ cd loopback-example-mixins
 $ npm install
 $ npm start
 ```
