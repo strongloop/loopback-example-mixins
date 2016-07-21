@@ -21,6 +21,7 @@ describe('mixin example', function() {
   it('should be assigned `squirrel` before saving', function(done) {
     var Dog = app.models.Dog;
     Dog.create({breed: 'Pitbull'}, function(err, dog) {
+      if (err) return done(err);
       assert.ok(dog.squirrel);
       assert.ok(dog.tag);
       assert.ok(dog.createdAt);
