@@ -2,10 +2,9 @@
 // Node module: loopback-example-mixins
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
+'use strict';
 
 module.exports = function(Model, options) {
-  'use strict';
-
   Model.observe('before save', function event(ctx, next) {
     if (ctx.instance) {
       ctx.instance.squirrel = true;
@@ -14,5 +13,4 @@ module.exports = function(Model, options) {
     }
     next();
   });
-
 };

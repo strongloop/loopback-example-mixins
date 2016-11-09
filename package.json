@@ -6,7 +6,7 @@
   "scripts": {
     "start": "slc run",
     "test": "mocha -R spec test",
-    "pretest": "jshint ."
+    "posttest": "eslint ."
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -22,8 +22,9 @@
     "loopback-component-explorer": "^2.1.0"
   },
   "devDependencies": {
-    "mocha": "latest",
-    "jshint": "^2.5.6"
+    "eslint-config-loopback": "^4.0.0",
+    "eslint": "^2.13.1",
+    "mocha": "latest"
   },
   "license": "MIT",
   "author": "Bryan Clark <clarkbw@gmail.com>",

@@ -2,10 +2,9 @@
 // Node module: loopback-example-mixins
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
+'use strict';
 
 describe('mixin example', function() {
-  'use strict';
-
   it('should load the module mixin', function() {
     // console.log(app.models.Dog.definition.properties);
     assert.ok(app.models.Dog.definition.properties.createdAt,
@@ -25,9 +24,8 @@ describe('mixin example', function() {
       assert.ok(dog.squirrel);
       assert.ok(dog.tag);
       assert.ok(dog.createdAt);
-      assert.ok(dog.updatedAt); 
+      assert.ok(dog.updatedAt);
       done();
     });
   });
-
 });

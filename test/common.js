@@ -2,6 +2,7 @@
 // Node module: loopback-example-mixins
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
+'use strict';
 
 /* exported global */
 global.loopback = require('loopback');
@@ -10,7 +11,7 @@ global.app = require('../server/server');
 
 // setup default data sources
 global.loopback.setDefaultDataSourceForType('db', {
-  connector: global.loopback.Memory
+  connector: global.loopback.Memory,
 });
 
 // auto attach data sources to models
