@@ -25,9 +25,8 @@ describe('mixin example', function() {
       assert.ok(dog.squirrel);
       assert.ok(dog.tag);
       assert.ok(dog.createdAt);
-      assert.ok(dog.updatedAt); 
+      assert.ok(dog.updatedAt);
       done();
     });
   });
-
 });

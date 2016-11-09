@@ -11,7 +11,6 @@ module.exports = function(Model, options) {
     type: String,
     'defaultFn': 'uuid',
     index: true,
-    unique: true
+    unique: true,
   });
-
 };
