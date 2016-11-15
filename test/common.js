@@ -10,7 +10,7 @@ global.assert = require('assert');
 global.app = require('../server/server');
 
 // setup default data sources
-global.loopback.setDefaultDataSourceForType('db', {
+global.loopback.createDataSource('db', {
   connector: global.loopback.Memory,
 });
 
