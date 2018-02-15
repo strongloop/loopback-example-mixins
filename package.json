@@ -13,7 +13,7 @@
     "cors": "^2.8.1",
     "strong-error-handler": "^1.1.0",
     "loopback": "^3.0.0",
-    "loopback-boot": "^2.6.5",
+    "loopback-boot": "^3.0.0",
     "loopback-ds-timestamp-mixin": "^3.0.0",
     "serve-favicon": "^2.0.1"
   },
